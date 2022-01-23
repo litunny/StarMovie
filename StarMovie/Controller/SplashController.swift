@@ -11,14 +11,17 @@ class SplashController: UIViewController {
 
     //MARK: - Properties
     var logoImage: UIImageView = {
-        let logoImage = UIImageView(image: UIImage(named: "logo"))
+        let logoImage = UIImageView(image: UIImage(named: Constants.splashScreenLogo))
+        logoImage.contentMode = .scaleAspectFill
         return logoImage
     }()
 
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = StarColors.primaryColor.color
+
+        self.setupView()
+        self.setupConstraints()
     }
 
     //MARK: - Events & Handlers
@@ -28,10 +31,16 @@ class SplashController: UIViewController {
 
 extension SplashController {
     func setupView() {
-
+        view.backgroundColor = StarColors.primaryColor.color
+        view.addSubview([logoImage])
     }
 
     func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+            logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logoImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            logoImage.heightAnchor.constraint(equalToConstant: Dimensions.splashScreenLogoHeight),
+            logoImage.widthAnchor.constraint(equalToConstant: Dimensions.splashScreenLogoWidth),
+        ])
     }
 }

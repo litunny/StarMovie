@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		044A8F2C279D71A1008858FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F2B279D71A1008858FE /* AppDelegate.swift */; };
 		044A8F2E279D71A1008858FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F2D279D71A1008858FE /* SceneDelegate.swift */; };
-		044A8F30279D71A1008858FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F2F279D71A1008858FE /* ViewController.swift */; };
 		044A8F33279D71A1008858FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044A8F31279D71A1008858FE /* Main.storyboard */; };
 		044A8F35279D71A4008858FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A8F34279D71A4008858FE /* Assets.xcassets */; };
 		044A8F38279D71A4008858FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044A8F36279D71A4008858FE /* LaunchScreen.storyboard */; };
@@ -19,6 +18,9 @@
 		044A8F60279D741F008858FE /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F5F279D741F008858FE /* SplashController.swift */; };
 		044A8F62279D75AF008858FE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F61279D75AF008858FE /* Colors.swift */; };
 		044A8F64279D763E008858FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F63279D763E008858FE /* Extensions.swift */; };
+		044A8F6C279D7DC2008858FE /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 044A8F6B279D7DC2008858FE /* SFSafeSymbols */; };
+		04A34AA6279D863800A242F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA5279D863800A242F5 /* Constants.swift */; };
+		04A34AA8279D869600A242F5 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA7279D869600A242F5 /* Dimensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 		044A8F28279D71A1008858FE /* StarMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044A8F2B279D71A1008858FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044A8F2D279D71A1008858FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		044A8F2F279D71A1008858FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		044A8F32279D71A1008858FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044A8F34279D71A4008858FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044A8F37279D71A4008858FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,8 @@
 		044A8F5F279D741F008858FE /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		044A8F61279D75AF008858FE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		044A8F63279D763E008858FE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04A34AA5279D863800A242F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04A34AA7279D869600A242F5 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044A8F6C279D7DC2008858FE /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +115,6 @@
 				044A8F5B279D73F4008858FE /* Controller */,
 				044A8F2B279D71A1008858FE /* AppDelegate.swift */,
 				044A8F2D279D71A1008858FE /* SceneDelegate.swift */,
-				044A8F2F279D71A1008858FE /* ViewController.swift */,
 				044A8F31279D71A1008858FE /* Main.storyboard */,
 				044A8F34279D71A4008858FE /* Assets.xcassets */,
 				044A8F36279D71A4008858FE /* LaunchScreen.storyboard */,
@@ -164,6 +167,8 @@
 			children = (
 				044A8F61279D75AF008858FE /* Colors.swift */,
 				044A8F63279D763E008858FE /* Extensions.swift */,
+				04A34AA5279D863800A242F5 /* Constants.swift */,
+				04A34AA7279D869600A242F5 /* Dimensions.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -184,6 +189,9 @@
 			dependencies = (
 			);
 			name = StarMovie;
+			packageProductDependencies = (
+				044A8F6B279D7DC2008858FE /* SFSafeSymbols */,
+			);
 			productName = StarMovie;
 			productReference = 044A8F28279D71A1008858FE /* StarMovie.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 044A8F1F279D71A1008858FE;
+			packageReferences = (
+				044A8F6A279D7DC2008858FE /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = 044A8F29279D71A1008858FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,9 +313,10 @@
 				044A8F60279D741F008858FE /* SplashController.swift in Sources */,
 				044A8F64279D763E008858FE /* Extensions.swift in Sources */,
 				044A8F62279D75AF008858FE /* Colors.swift in Sources */,
-				044A8F30279D71A1008858FE /* ViewController.swift in Sources */,
 				044A8F2C279D71A1008858FE /* AppDelegate.swift in Sources */,
 				044A8F2E279D71A1008858FE /* SceneDelegate.swift in Sources */,
+				04A34AA8279D869600A242F5 /* Dimensions.swift in Sources */,
+				04A34AA6279D863800A242F5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +674,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		044A8F6A279D7DC2008858FE /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		044A8F6B279D7DC2008858FE /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 044A8F6A279D7DC2008858FE /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 044A8F20279D71A1008858FE /* Project object */;
 }
