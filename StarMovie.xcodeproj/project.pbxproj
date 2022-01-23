@@ -16,6 +16,9 @@
 		044A8F43279D71A4008858FE /* StarMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F42279D71A4008858FE /* StarMovieTests.swift */; };
 		044A8F4D279D71A4008858FE /* StarMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F4C279D71A4008858FE /* StarMovieUITests.swift */; };
 		044A8F4F279D71A4008858FE /* StarMovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F4E279D71A4008858FE /* StarMovieUITestsLaunchTests.swift */; };
+		044A8F60279D741F008858FE /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F5F279D741F008858FE /* SplashController.swift */; };
+		044A8F62279D75AF008858FE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F61279D75AF008858FE /* Colors.swift */; };
+		044A8F64279D763E008858FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A8F63279D763E008858FE /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		044A8F48279D71A4008858FE /* StarMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044A8F4C279D71A4008858FE /* StarMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMovieUITests.swift; sourceTree = "<group>"; };
 		044A8F4E279D71A4008858FE /* StarMovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		044A8F5F279D741F008858FE /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		044A8F61279D75AF008858FE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		044A8F63279D763E008858FE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 		044A8F2A279D71A1008858FE /* StarMovie */ = {
 			isa = PBXGroup;
 			children = (
+				044A8F5E279D7405008858FE /* Components */,
+				044A8F5D279D73FF008858FE /* ViewModel */,
+				044A8F5C279D73FA008858FE /* Model */,
+				044A8F5B279D73F4008858FE /* Controller */,
 				044A8F2B279D71A1008858FE /* AppDelegate.swift */,
 				044A8F2D279D71A1008858FE /* SceneDelegate.swift */,
 				044A8F2F279D71A1008858FE /* ViewController.swift */,
@@ -125,6 +135,37 @@
 				044A8F4E279D71A4008858FE /* StarMovieUITestsLaunchTests.swift */,
 			);
 			path = StarMovieUITests;
+			sourceTree = "<group>";
+		};
+		044A8F5B279D73F4008858FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044A8F5F279D741F008858FE /* SplashController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044A8F5C279D73FA008858FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044A8F5D279D73FF008858FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		044A8F5E279D7405008858FE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				044A8F61279D75AF008858FE /* Colors.swift */,
+				044A8F63279D763E008858FE /* Extensions.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044A8F60279D741F008858FE /* SplashController.swift in Sources */,
+				044A8F64279D763E008858FE /* Extensions.swift in Sources */,
+				044A8F62279D75AF008858FE /* Colors.swift in Sources */,
 				044A8F30279D71A1008858FE /* ViewController.swift in Sources */,
 				044A8F2C279D71A1008858FE /* AppDelegate.swift in Sources */,
 				044A8F2E279D71A1008858FE /* SceneDelegate.swift in Sources */,
