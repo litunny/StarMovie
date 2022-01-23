@@ -7,6 +7,14 @@
 
 import UIKit
 
+extension UIViewController {
+    var sceneDelegate: SceneDelegate? {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let delegate = windowScene.delegate as? SceneDelegate else { return nil }
+         return delegate
+    }
+}
+
 extension UIView {
     func addSubview(_ views: [UIView]) {
         for view in views {
