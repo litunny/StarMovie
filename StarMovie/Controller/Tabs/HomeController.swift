@@ -32,16 +32,19 @@ class HomeController: BaseController {
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.contentSize = CGSize(width: Constants.systemSizeWidth,
-                                    height: Constants.systemSizeHeight + 120)
+                                    height: Constants.systemSizeHeight + Dimensions.oneTwenty)
         scroll.isScrollEnabled = true
         scroll.showsVerticalScrollIndicator = false
+        scroll.showsHorizontalScrollIndicator = false
         scroll.bounces = true
         scroll.refreshControl = refreshControl
         return scroll
     }()
 
     let segmentControl = StartSegmentControl { result in
-        print(try! result.get())
+        DispatchQueue.main.async {
+            print(try! result.get())
+        }
     }
 
     //MARK: - Lifecyle
@@ -61,7 +64,7 @@ extension HomeController {
 
     func setupView () {
         self.headerSectionView.addSubview([titleLabel, searchIconView])
-        view.addSubview([headerSectionView, segmentControl])
+        view.addSubview([headerSectionView, segmentControl, scrollView])
     }
 
     func setupConstraints() {
@@ -71,7 +74,8 @@ extension HomeController {
                                               headerSectionView: headerSectionView,
                                               segmentControl: segmentControl,
                                               titleLabel: titleLabel,
-                                              searchIconView: searchIconView)
+                                              searchIconView: searchIconView,
+                                              scrollView: scrollView)
                                         )
     }
 }

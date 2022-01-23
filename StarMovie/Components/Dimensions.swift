@@ -31,4 +31,5 @@ enum Dimensions {
     static let twentyFour: CGFloat = 24
     static let forty: CGFloat = 40
     static let fortyFour: CGFloat = 44
+    static let oneTwenty: CGFloat = 120
 }

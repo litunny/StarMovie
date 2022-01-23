@@ -17,8 +17,9 @@ class Constraints {
               headerSectionView: StarHeaderSectionView,
               segmentControl: StartSegmentControl,
               titleLabel: StarHeaderTextView,
-              searchIconView: UIImageView) -> [NSLayoutConstraint] {
-        
+              searchIconView: UIImageView,
+              scrollView: UIScrollView) -> [NSLayoutConstraint] {
+
         let constraints = [
             headerSectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Dimensions.ten),
             headerSectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -38,6 +39,10 @@ class Constraints {
             searchIconView.heightAnchor.constraint(equalToConstant: Dimensions.twentyFour),
             searchIconView.widthAnchor.constraint(equalToConstant: Dimensions.twentyFour),
 
+            scrollView.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: Dimensions.sixteen),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Dimensions.eighteen),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Dimensions.eighteen),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ]
         
         return constraints
