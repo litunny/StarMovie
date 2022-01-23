@@ -18,13 +18,17 @@ enum Dimensions {
     static let segmentWidth: CGFloat = 166.0
 
     //CGFloat Positive Values
+    static let zero: CGFloat = 0
     static let one: CGFloat = 1
     static let two: CGFloat = 2
     static let four: CGFloat = 4
-    static let fourteen: CGFloat = 14
+    static let ten: CGFloat = 10
     static let thirteen: CGFloat = 13
+    static let fourteen: CGFloat = 14
     static let sixteen: CGFloat = 16
     static let eighteen: CGFloat = 18
     static let twenty: CGFloat = 20
     static let twentyFour: CGFloat = 24
+    static let forty: CGFloat = 40
+    static let fortyFour: CGFloat = 44
 }
