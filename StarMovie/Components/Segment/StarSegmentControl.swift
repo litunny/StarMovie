@@ -6,22 +6,25 @@
 //
 
 import UIKit
+import SFSafeSymbols
 
 class StartSegmentControl: UIView {
 
     //MARK: - Properties
-    private var firstLabel: String {
-        willSet {
-            firstLabelView.text = newValue
-        }
-    }
-
-    private var secondLabel: String
+    private var result: ((Result<Int, Error>) -> Void)!
 
     var firstLabelView: UILabel = {
         let label = UILabel()
-        label.text = "Now showing"
+        label.text = "Now Showing"
         label.textColor = StarColors.whiteColor
+        label.font = .boldSystemFont(ofSize: Dimensions.fourteen)
+        return label
+    }()
+
+    var secondLabelView: UILabel = {
+        let label = UILabel()
+        label.text = "Coming Soon"
+        label.textColor = UIColor.systemGray2
         label.font = .boldSystemFont(ofSize: Dimensions.fourteen)
         return label
     }()
@@ -40,10 +43,16 @@ class StartSegmentControl: UIView {
         return view
     }()
 
+    var playIconView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(systemSymbol: .playCircleFill))
+        imageView.tintColor = StarColors.whiteColor
+        imageView.clipsToBounds = true
+        return imageView
+    }()
 
-    init(_ firstLabel: String, _ secondLabel: String) {
-        self.firstLabel = firstLabel
-        self.secondLabel = secondLabel
+    init(_ result: @escaping (Result<Int, Error>) -> Void) {
+
+        self.result = result
 
         super.init(frame: .zero)
 
@@ -64,14 +73,13 @@ class StartSegmentControl: UIView {
         //Inject subviews
         self.addSubview([firstSegment, secondSegment])
 
-        self.firstSegment.addSubview([
-            firstLabelView
-        ])
+        self.firstSegment.addSubview([playIconView, firstLabelView])
+        self.secondSegment.addSubview([secondLabelView])
     }
 
     func prepareView() {
         self.layer.borderColor = UIColor.systemGray2.cgColor
-        self.layer.borderWidth = Dimensions.two
+        self.layer.borderWidth = Dimensions.one
         self.layer.cornerRadius = Dimensions.twenty
         self.backgroundColor = .white
     }
@@ -91,17 +99,48 @@ class StartSegmentControl: UIView {
             secondSegment.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Dimensions.four),
             secondSegment.topAnchor.constraint(equalTo: self.topAnchor, constant: Dimensions.four),
 
+            //Play Icon View Constraints
+            playIconView.centerYAnchor.constraint(equalTo: firstSegment.centerYAnchor),
+            playIconView.leadingAnchor.constraint(equalTo: firstSegment.leadingAnchor, constant: Dimensions.eighteen),
+            playIconView.heightAnchor.constraint(equalToConstant: Dimensions.eighteen),
+            playIconView.widthAnchor.constraint(equalToConstant: Dimensions.eighteen),
+
+            //First Label View Constraints
             firstLabelView.centerYAnchor.constraint(equalTo: firstSegment.centerYAnchor),
-            firstLabelView.centerXAnchor.constraint(equalTo: firstSegment.centerXAnchor),
+            firstLabelView.leadingAnchor.constraint(equalTo: playIconView.trailingAnchor, constant: 10),
+
+            secondLabelView.centerYAnchor.constraint(equalTo: secondSegment.centerYAnchor),
+            secondLabelView.centerXAnchor.constraint(equalTo: secondSegment.centerXAnchor),
         ])
     }
 
     func setupSelectors() {
-        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTapped)))
+        self.firstSegment.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleFirstSegment)))
+        self.secondSegment.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSecondSegment)))
     }
 
-    @objc func handleTapped() {
-        print("Tapped!")
+    @objc func handleFirstSegment() {
+        self.secondSegment.backgroundColor = .clear
+        self.secondLabelView.textColor = UIColor.systemGray2
+
+        self.firstSegment.backgroundColor = StarColors.redColor
+        self.firstLabelView.textColor = UIColor.white
+
+        self.playIconView.tintColor = StarColors.whiteColor
+
+        result!(.success(0))
+    }
+
+    @objc func handleSecondSegment() {
+        self.secondSegment.backgroundColor = StarColors.redColor
+        self.secondLabelView.textColor = UIColor.white
+
+        self.firstSegment.backgroundColor = .clear
+        self.firstLabelView.textColor = UIColor.systemGray2
+
+        self.playIconView.tintColor = StarColors.redColor
+
+        result!(.success(1))
     }
 
     required init?(coder: NSCoder) {

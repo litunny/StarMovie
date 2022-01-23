@@ -10,8 +10,16 @@ import UIKit
 class HomeController: UIViewController {
 
     //MARK: - Properties
-    let segmentControl = StartSegmentControl("", "")
-    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Star Movie"
+        label.font = .boldSystemFont(ofSize: Dimensions.twentyFour)
+        return label
+    }()
+
+    let segmentControl = StartSegmentControl { result in
+        print(try! result.get())
+    }
 
     //MARK: - Lifecyle
     override func viewDidLoad() {
@@ -38,6 +46,8 @@ extension HomeController {
             segmentControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             segmentControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             segmentControl.heightAnchor.constraint(equalToConstant: 40),
+
+
         ])
     }
 }
