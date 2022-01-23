@@ -33,7 +33,7 @@ extension UIView {
     func addBottomShadow() {
         layer.masksToBounds = false
         layer.shadowRadius = Dimensions.four
-        layer.shadowOpacity = 1
+        layer.shadowOpacity = Float(Dimensions.one)
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOffset = CGSize(width: Dimensions.zero , height: Dimensions.two)
         layer.shadowPath = UIBezierPath(rect: CGRect(x: Dimensions.zero,
