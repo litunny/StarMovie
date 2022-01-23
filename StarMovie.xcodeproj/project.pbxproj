@@ -22,6 +22,7 @@
 		04A34AA6279D863800A242F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA5279D863800A242F5 /* Constants.swift */; };
 		04A34AA8279D869600A242F5 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA7279D869600A242F5 /* Dimensions.swift */; };
 		04A34AAA279D8A0900A242F5 /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA9279D8A0900A242F5 /* MoviesController.swift */; };
+		04A34AAC279D8AB000A242F5 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AAB279D8AB000A242F5 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		04A34AA5279D863800A242F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04A34AA7279D869600A242F5 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		04A34AA9279D8A0900A242F5 /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
+		04A34AAB279D8AB000A242F5 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				044A8F5F279D741F008858FE /* SplashController.swift */,
 				04A34AA9279D8A0900A242F5 /* MoviesController.swift */,
+				04A34AAB279D8AB000A242F5 /* BaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A34AAA279D8A0900A242F5 /* MoviesController.swift in Sources */,
+				04A34AAC279D8AB000A242F5 /* BaseController.swift in Sources */,
 				044A8F60279D741F008858FE /* SplashController.swift in Sources */,
 				044A8F64279D763E008858FE /* Extensions.swift in Sources */,
 				044A8F62279D75AF008858FE /* Colors.swift in Sources */,

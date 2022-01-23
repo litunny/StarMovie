@@ -1,5 +1,5 @@
 //
-//  MoviesController.swift
+//  BaseController.swift
 //  StarMovie
 //
 //  Created by Itunu on 23/01/2022.
@@ -7,10 +7,9 @@
 
 import UIKit
 
-class MoviesController: BaseController {
+class BaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
     }
 }
