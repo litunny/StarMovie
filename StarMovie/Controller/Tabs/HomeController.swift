@@ -11,22 +11,34 @@ import SFSafeSymbols
 class HomeController: BaseController {
 
     //MARK: - Properties
-    private let titleLabel: StarHeaderTextView = {
+    private lazy var titleLabel: StarHeaderTextView = {
         let label = StarHeaderTextView()
         label.text = "Star Movie"
         return label
     }()
 
-    private let searchIconView: UIImageView = {
+    private lazy var searchIconView: UIImageView = {
         let image = UIImage(systemSymbol: .magnifyingglass)
                     .withRenderingMode(.alwaysOriginal)
         let imageView = UIImageView(image: image)
         return imageView
     }()
 
-    private let headerSectionView: StarHeaderSectionView = {
+    private lazy var headerSectionView: StarHeaderSectionView = {
         let view = StarHeaderSectionView()
         return view
+    }()
+
+    private lazy var scrollView: UIScrollView = {
+        let scroll = UIScrollView()
+        scroll.contentSize = CGSize(width: Constants.systemSizeWidth,
+                                    height: Constants.systemSizeHeight + Dimensions.oneTwenty)
+        scroll.isScrollEnabled = true
+        scroll.showsVerticalScrollIndicator = false
+        scroll.showsHorizontalScrollIndicator = false
+        scroll.bounces = true
+        scroll.refreshControl = refreshControl
+        return scroll
     }()
 
     let segmentControl = StartSegmentControl { result in
