@@ -22,6 +22,7 @@ class SplashController: UIViewController {
 
         self.setupView()
         self.setupConstraints()
+        self.setupTimer()
     }
 
     //MARK: - Events & Handlers
@@ -42,5 +43,12 @@ extension SplashController {
             logoImage.heightAnchor.constraint(equalToConstant: Dimensions.splashScreenLogoHeight),
             logoImage.widthAnchor.constraint(equalToConstant: Dimensions.splashScreenLogoWidth),
         ])
+    }
+
+    func setupTimer() {
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
+            self.sceneDelegate?.navigateWithScene(using: MoviesController())
+            timer.invalidate()
+        }
     }
 }
