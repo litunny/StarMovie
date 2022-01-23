@@ -8,6 +8,11 @@
 import UIKit
 
 class BaseController: UIViewController {
+    
+    public lazy var refreshControl : UIRefreshControl = {
+        let control = UIRefreshControl()
+        return control
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
