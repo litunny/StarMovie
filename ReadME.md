@@ -7,5 +7,10 @@ The inspiration for this design is gotten from the following this [figma link](h
 1. SDWebImage: To Asynchronously load image into UIImageView ([Link](https://github.com/SDWebImage/SDWebImage))
 2. SFSafeSymbols: Type safe SF Symbols ([Link](https://github.com/SFSafeSymbols/SFSafeSymbols))
 
-### Author
+## Author
 Osinnowo Emmanuel
+
+## Screenshot
+
+![image description](screenshot.png)
+
