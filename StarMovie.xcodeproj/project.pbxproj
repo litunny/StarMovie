@@ -22,6 +22,9 @@
 		04980709279DCECB009B1B5C /* StarHeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04980708279DCECB009B1B5C /* StarHeaderSectionView.swift */; };
 		0498070B279DCF3F009B1B5C /* StarHeaderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498070A279DCF3F009B1B5C /* StarHeaderTextView.swift */; };
 		0498070D279DD5E9009B1B5C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498070C279DD5E9009B1B5C /* Constraints.swift */; };
+		0498070F279DE3AF009B1B5C /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498070E279DE3AF009B1B5C /* CollectionViewDataSource.swift */; };
+		04980712279DE499009B1B5C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04980711279DE499009B1B5C /* MovieCell.swift */; };
+		04980714279DE4C8009B1B5C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04980713279DE4C8009B1B5C /* Movie.swift */; };
 		04A34AA6279D863800A242F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA5279D863800A242F5 /* Constants.swift */; };
 		04A34AA8279D869600A242F5 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA7279D869600A242F5 /* Dimensions.swift */; };
 		04A34AAA279D8A0900A242F5 /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AA9279D8A0900A242F5 /* MoviesController.swift */; };
@@ -31,6 +34,10 @@
 		04A34AB3279D8D5300A242F5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AB2279D8D5300A242F5 /* NotificationController.swift */; };
 		04A34AB5279D8D6000A242F5 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AB4279D8D6000A242F5 /* ProfileController.swift */; };
 		04A34AB8279DB59000A242F5 /* StarSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A34AB7279DB59000A242F5 /* StarSegmentControl.swift */; };
+		04B754DB279E017C001FFF22 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B754DA279E017C001FFF22 /* ApiService.swift */; };
+		04B754DD279E04FD001FFF22 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B754DC279E04FD001FFF22 /* MovieViewModel.swift */; };
+		04B754E0279E315C001FFF22 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 04B754DF279E315C001FFF22 /* SDWebImage */; };
+		04B754E2279EBAE6001FFF22 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B754E1279EBAE6001FFF22 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,9 @@
 		04980708279DCECB009B1B5C /* StarHeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarHeaderSectionView.swift; sourceTree = "<group>"; };
 		0498070A279DCF3F009B1B5C /* StarHeaderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarHeaderTextView.swift; sourceTree = "<group>"; };
 		0498070C279DD5E9009B1B5C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		0498070E279DE3AF009B1B5C /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		04980711279DE499009B1B5C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		04980713279DE4C8009B1B5C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04A34AA5279D863800A242F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04A34AA7279D869600A242F5 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		04A34AA9279D8A0900A242F5 /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
@@ -78,6 +88,9 @@
 		04A34AB2279D8D5300A242F5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		04A34AB4279D8D6000A242F5 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		04A34AB7279DB59000A242F5 /* StarSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSegmentControl.swift; sourceTree = "<group>"; };
+		04B754DA279E017C001FFF22 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		04B754DC279E04FD001FFF22 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		04B754E1279EBAE6001FFF22 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B754E0279E315C001FFF22 /* SDWebImage in Frameworks */,
 				044A8F6C279D7DC2008858FE /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,10 +143,11 @@
 		044A8F2A279D71A1008858FE /* StarMovie */ = {
 			isa = PBXGroup;
 			children = (
+				04B754D9279E0170001FFF22 /* Network */,
 				044A8F5E279D7405008858FE /* Components */,
 				044A8F5D279D73FF008858FE /* ViewModel */,
 				044A8F5C279D73FA008858FE /* Model */,
-				044A8F5B279D73F4008858FE /* Controller */,
+				044A8F5B279D73F4008858FE /* View */,
 				044A8F2B279D71A1008858FE /* AppDelegate.swift */,
 				044A8F2D279D71A1008858FE /* SceneDelegate.swift */,
 				044A8F31279D71A1008858FE /* Main.storyboard */,
@@ -160,20 +175,22 @@
 			path = StarMovieUITests;
 			sourceTree = "<group>";
 		};
-		044A8F5B279D73F4008858FE /* Controller */ = {
+		044A8F5B279D73F4008858FE /* View */ = {
 			isa = PBXGroup;
 			children = (
 				04A34AAD279D8D0200A242F5 /* Tabs */,
 				044A8F5F279D741F008858FE /* SplashController.swift */,
 				04A34AA9279D8A0900A242F5 /* MoviesController.swift */,
 				04A34AAB279D8AB000A242F5 /* BaseController.swift */,
+				04B754E1279EBAE6001FFF22 /* DetailController.swift */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		044A8F5C279D73FA008858FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04980713279DE4C8009B1B5C /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 		044A8F5D279D73FF008858FE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04B754DC279E04FD001FFF22 /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,14 +206,24 @@
 		044A8F5E279D7405008858FE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04980710279DE483009B1B5C /* Cells */,
 				04A34AB6279DB57D00A242F5 /* Control */,
 				044A8F61279D75AF008858FE /* Colors.swift */,
 				044A8F63279D763E008858FE /* Extensions.swift */,
 				04A34AA5279D863800A242F5 /* Constants.swift */,
 				04A34AA7279D869600A242F5 /* Dimensions.swift */,
 				0498070C279DD5E9009B1B5C /* Constraints.swift */,
+				0498070E279DE3AF009B1B5C /* CollectionViewDataSource.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		04980710279DE483009B1B5C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04980711279DE499009B1B5C /* MovieCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		04A34AAD279D8D0200A242F5 /* Tabs */ = {
@@ -219,6 +247,14 @@
 			path = Control;
 			sourceTree = "<group>";
 		};
+		04B754D9279E0170001FFF22 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04B754DA279E017C001FFF22 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +273,7 @@
 			name = StarMovie;
 			packageProductDependencies = (
 				044A8F6B279D7DC2008858FE /* SFSafeSymbols */,
+				04B754DF279E315C001FFF22 /* SDWebImage */,
 			);
 			productName = StarMovie;
 			productReference = 044A8F28279D71A1008858FE /* StarMovie.app */;
@@ -312,6 +349,7 @@
 			mainGroup = 044A8F1F279D71A1008858FE;
 			packageReferences = (
 				044A8F6A279D7DC2008858FE /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				04B754DE279E315C001FFF22 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 044A8F29279D71A1008858FE /* Products */;
 			projectDirPath = "";
@@ -361,6 +399,7 @@
 				0498070D279DD5E9009B1B5C /* Constraints.swift in Sources */,
 				044A8F60279D741F008858FE /* SplashController.swift in Sources */,
 				044A8F64279D763E008858FE /* Extensions.swift in Sources */,
+				04B754DB279E017C001FFF22 /* ApiService.swift in Sources */,
 				04A34AAF279D8D1D00A242F5 /* HomeController.swift in Sources */,
 				04A34AB8279DB59000A242F5 /* StarSegmentControl.swift in Sources */,
 				0498070B279DCF3F009B1B5C /* StarHeaderTextView.swift in Sources */,
@@ -368,9 +407,14 @@
 				044A8F62279D75AF008858FE /* Colors.swift in Sources */,
 				04A34AB3279D8D5300A242F5 /* NotificationController.swift in Sources */,
 				04980709279DCECB009B1B5C /* StarHeaderSectionView.swift in Sources */,
+				04B754E2279EBAE6001FFF22 /* DetailController.swift in Sources */,
 				044A8F2C279D71A1008858FE /* AppDelegate.swift in Sources */,
+				0498070F279DE3AF009B1B5C /* CollectionViewDataSource.swift in Sources */,
+				04980714279DE4C8009B1B5C /* Movie.swift in Sources */,
+				04980712279DE499009B1B5C /* MovieCell.swift in Sources */,
 				044A8F2E279D71A1008858FE /* SceneDelegate.swift in Sources */,
 				04A34AA8279D869600A242F5 /* Dimensions.swift in Sources */,
+				04B754DD279E04FD001FFF22 /* MovieViewModel.swift in Sources */,
 				04A34AA6279D863800A242F5 /* Constants.swift in Sources */,
 				04A34AB1279D8D4B00A242F5 /* TicketController.swift in Sources */,
 			);
@@ -744,6 +788,14 @@
 				kind = branch;
 			};
 		};
+		04B754DE279E315C001FFF22 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -751,6 +803,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 044A8F6A279D7DC2008858FE /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
 			productName = SFSafeSymbols;
+		};
+		04B754DF279E315C001FFF22 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B754DE279E315C001FFF22 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

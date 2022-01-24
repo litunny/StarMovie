@@ -22,6 +22,7 @@ enum Dimensions {
     static let one: CGFloat = 1
     static let two: CGFloat = 2
     static let four: CGFloat = 4
+    static let eight: CGFloat = 8
     static let ten: CGFloat = 10
     static let thirteen: CGFloat = 13
     static let fourteen: CGFloat = 14
@@ -32,4 +33,10 @@ enum Dimensions {
     static let forty: CGFloat = 40
     static let fortyFour: CGFloat = 44
     static let oneTwenty: CGFloat = 120
+    static let oneSixtyFour: CGFloat = 164
+    static let twoFifty: CGFloat = 250
+    static let twoSeventy: CGFloat = 270
+    static let twoEighty: CGFloat = 280
+    static let threeHundred: CGFloat = 300
+    static let threeFifty: CGFloat = 350
 }

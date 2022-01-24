@@ -18,7 +18,7 @@ class Constraints {
               segmentControl: StartSegmentControl,
               titleLabel: StarHeaderTextView,
               searchIconView: UIImageView,
-              scrollView: UIScrollView) -> [NSLayoutConstraint] {
+              moviesCollectionView: UICollectionView) -> [NSLayoutConstraint] {
 
         let constraints = [
             headerSectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Dimensions.ten),
@@ -39,10 +39,10 @@ class Constraints {
             searchIconView.heightAnchor.constraint(equalToConstant: Dimensions.twentyFour),
             searchIconView.widthAnchor.constraint(equalToConstant: Dimensions.twentyFour),
 
-            scrollView.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: Dimensions.sixteen),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Dimensions.eighteen),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Dimensions.eighteen),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            moviesCollectionView.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: Dimensions.sixteen),
+            moviesCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            moviesCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            moviesCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ]
         
         return constraints

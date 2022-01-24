@@ -35,11 +35,6 @@ extension MoviesController {
         viewControllers = self.controllers
 
         self.tabBar.isTranslucent = true
-        UITabBar.appearance().backgroundImage = UIImage()
-
-        //This is for removing top line from the tabbar.
-        UITabBar.appearance().layer.borderWidth = 0.0
-        UITabBar.appearance().clipsToBounds = true
     }
 
     func setupConstraints() {
