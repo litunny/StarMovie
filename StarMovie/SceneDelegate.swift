@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = MoviesController()
+        window?.rootViewController = SplashController()
     }
 
     func navigateWithScene(using controller : UIViewController) {
